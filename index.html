@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nature Discovery - Home</title>
+      <link rel="stylesheet" href="styles.css">
+      <style>
+         body.home-page {
+            background-color: #244c43;
+            background-image: url("pattern.svg");
+            background-repeat: repeat;
+            color: #fffbea;
+         }
+
+         .home-title {
+            text-align: center;
+            color: #ffffff;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 2.6em;
+            text-shadow: 3px 3px 2px #17382f;
+         }
+
+         .home-title::first-letter {
+            color: #ffd166;
+            font-size: 1.6em;
+         }
+
+         .welcome-box {
+            max-width: 760px;
+            margin: 35px auto;
+            padding: 24px;
+            color: #17382f;
+            background-color: rgba(255, 253, 232, 0.94);
+            border: 6px double #e3b341;
+            border-radius: 22px;
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body class="home-page">
+      <nav class="top-bar" aria-label="Main navigation">
+         <a href="index.html">Home</a>
+         <a href="images.html">Image Gallery</a>
+         <a href="hidden.html">Hidden Words</a>
+      </nav>
+
+      <main class="page-content">
+         <h1 class="home-title">Nature Discovery</h1>
+
+         <section class="welcome-box">
+            <h2>Welcome, Explorer!</h2>
+            <p>
+               This small website celebrates colorful landscapes and the little
+               surprises that can be found outdoors. Use the navigation bar to
+               view the gallery or uncover secret words in a nature story.
+            </p>
+         </section>
+      </main>
+   </body>
+</html>
