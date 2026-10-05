@@ -1,0 +1,149 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding-top: 88px;
+   background-color: #e7f0f5;
+   color: #172a3a;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16pt;
+   line-height: 1.6;
+}
+
+.top-bar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 14px;
+   padding: 12px;
+   background-color: #17324d;
+   border-bottom: 4px solid #e3b341;
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-bar a {
+   padding: 5px 14px;
+   border: 2px solid #f2cf66;
+   border-radius: 8px;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.top-bar a:link {
+   color: #fff5c2;
+   background-color: #244d70;
+}
+
+.top-bar a:visited {
+   color: #f8d7ff;
+   background-color: #513b67;
+}
+
+.top-bar a:hover,
+.top-bar a:focus {
+   color: #172a3a;
+   background-color: #f2cf66;
+}
+
+.page-content {
+   width: min(1100px, 92%);
+   margin: 30px auto;
+}
+
+.page-heading {
+   color: #17324d;
+}
+
+.image-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 22px;
+}
+
+.image-card {
+   margin: 0;
+   padding: 12px;
+   background-color: #ffffff;
+   border: 3px solid #4b779c;
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(23, 50, 77, 0.2);
+}
+
+.image-card img {
+   display: block;
+   width: 100%;
+   height: 240px;
+   object-fit: cover;
+   border-radius: 6px;
+}
+
+.image-card figcaption {
+   margin-top: 8px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.text-block {
+   padding: 24px;
+   background-color: #fffdf0;
+   border: 4px double #557a4e;
+   border-radius: 12px;
+}
+
+.text-block p::first-line {
+   text-transform: uppercase;
+}
+
+.secret {
+   display: inline-block;
+   min-width: 82px;
+   padding: 0 5px;
+   color: #1c4f78;
+   background-color: #d8edf8;
+   border: 1px dashed #1c4f78;
+   border-radius: 4px;
+   text-align: center;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.secret input {
+   position: absolute;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.secret .hidden-word {
+   display: none;
+}
+
+.secret input:checked + .click-text {
+   display: none;
+}
+
+.secret input:checked + .click-text + .hidden-word {
+   display: inline;
+}
+
+@media (min-width: 1280px) and (min-height: 600px) {
+   .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 650px) {
+   body {
+      padding-top: 136px;
+   }
+
+   .image-grid {
+      grid-template-columns: 1fr;
+   }
+}

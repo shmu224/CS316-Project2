@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+   <rect width="600" height="360" fill="#bfe9ff"/>
+   <circle cx="92" cy="75" r="42" fill="#ffe28a"/>
+   <path d="M0 175 Q75 125 150 175 T300 175 T450 175 T600 175 V360 H0Z" fill="#2f9fcb"/>
+   <path d="M0 235 Q75 185 150 235 T300 235 T450 235 T600 235 V360 H0Z" fill="#267aa5"/>
+   <path d="M0 296 Q75 246 150 296 T300 296 T450 296 T600 296 V360 H0Z" fill="#185b84"/>
+   <g fill="#ffffff"><circle cx="440" cy="72" r="18"/><circle cx="465" cy="66" r="24"/><circle cx="495" cy="75" r="18"/></g>
+</svg>
